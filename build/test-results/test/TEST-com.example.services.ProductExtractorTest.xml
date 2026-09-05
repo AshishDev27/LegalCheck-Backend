@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.services.ProductExtractorTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-02T10:52:29.507Z" hostname="DESKTOP-5E5298A" time="0.034">
+  <properties/>
+  <testcase name="overlapping information across panels is merged, not duplicated" classname="com.example.services.ProductExtractorTest" time="0.012"/>
+  <testcase name="units are normalised to their standard form" classname="com.example.services.ProductExtractorTest" time="0.002"/>
+  <testcase name="identity comes from the front panel" classname="com.example.services.ProductExtractorTest" time="0.003"/>
+  <testcase name="front and back are combined into one product" classname="com.example.services.ProductExtractorTest" time="0.005"/>
+  <testcase name="raw text from both panels is retained for review" classname="com.example.services.ProductExtractorTest" time="0.004"/>
+  <testcase name="instruction copy is never mistaken for a manufacturer" classname="com.example.services.ProductExtractorTest" time="0.001"/>
+  <testcase name="panels that disagree produce a conflict instead of a silent overwrite" classname="com.example.services.ProductExtractorTest" time="0.005"/>
+  <testcase name="a label with an unreadable value leaves the field empty and records it" classname="com.example.services.ProductExtractorTest" time="0.001"/>
+  <testcase name="nothing is invented when a panel yields no text" classname="com.example.services.ProductExtractorTest" time="0.001"/>
+  <system-out><![CDATA[2026-09-02 16:22:29.541 [Test worker] WARN  c.e.s.extraction.ProductExtractor - Extraction requested with no usable OCR text on any panel
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

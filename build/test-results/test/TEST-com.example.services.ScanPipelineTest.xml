@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.services.ScanPipelineTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-02T10:52:29.542Z" hostname="DESKTOP-5E5298A" time="0.027">
+  <properties/>
+  <testcase name="a scan with no readable text is not scored as compliant" classname="com.example.services.ScanPipelineTest" time="0.001"/>
+  <testcase name="a missing mandatory declaration lowers the score" classname="com.example.services.ScanPipelineTest" time="0.008"/>
+  <testcase name="a declaration carrying unknown fields is still accepted" classname="com.example.services.ScanPipelineTest" time="0.011"/>
+  <testcase name="a clearly labelled package is read, combined and scored" classname="com.example.services.ScanPipelineTest" time="0.003"/>
+  <testcase name="a poorly read back panel produces missing fields rather than invented ones" classname="com.example.services.ScanPipelineTest" time="0.002"/>
+  <testcase name="overlapping declarations across panels become one product, not two" classname="com.example.services.ScanPipelineTest" time="0.002"/>
+  <system-out><![CDATA[2026-09-02 16:22:29.543 [Test worker] WARN  c.e.s.extraction.ProductExtractor - Extraction requested with no usable OCR text on any panel
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

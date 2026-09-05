@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.compliance.ComplianceRuleEngineTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-09-02T10:52:29.451Z" hostname="DESKTOP-5E5298A" time="0.034">
+  <properties/>
+  <testcase name="a missing generic name is a critical failure" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.028"/>
+  <testcase name="a weak extraction is sent for review rather than judged" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.001"/>
+  <testcase name="a non standard quantity unit fails the quantity rule" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.001"/>
+  <testcase name="an unreadable field is flagged for review and never counted as compliant" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.001"/>
+  <testcase name="rules that do not apply to the product are not scored" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.001"/>
+  <testcase name="an MRP without the tax wording is a warning, not a failure" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.0"/>
+  <testcase name="the score falls as declarations are removed" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.002"/>
+  <testcase name="a fully declared package scores 100 and passes" classname="com.example.compliance.ComplianceRuleEngineTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

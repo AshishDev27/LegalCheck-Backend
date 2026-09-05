@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.services.DeclarationValidatorTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-09-02T10:52:29.488Z" hostname="DESKTOP-5E5298A" time="0.017">
+  <properties/>
+  <testcase name="an unreadable field is reported as unreadable, not as missing" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="a future manufacturing date is suspicious" classname="com.example.services.DeclarationValidatorTest" time="0.0"/>
+  <testcase name="a shelf life expressed as a duration is accepted" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="a named entity without an address is not a complete declaration" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="an implausible price is flagged rather than accepted" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="a complete declaration raises no blocking issues" classname="com.example.services.DeclarationValidatorTest" time="0.0"/>
+  <testcase name="packaging date formats are parsed" classname="com.example.services.DeclarationValidatorTest" time="0.009"/>
+  <testcase name="an FSSAI licence that is not fourteen digits is rejected" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="a non standard quantity unit is rejected" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="an import without a country of origin is incomplete" classname="com.example.services.DeclarationValidatorTest" time="0.0"/>
+  <testcase name="an expiry before manufacture is invalid" classname="com.example.services.DeclarationValidatorTest" time="0.001"/>
+  <testcase name="an already expired product is suspicious" classname="com.example.services.DeclarationValidatorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
