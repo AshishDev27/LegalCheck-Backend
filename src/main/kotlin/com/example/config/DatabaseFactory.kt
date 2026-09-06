@@ -29,6 +29,7 @@ object DatabaseFactory {
         val flyway = Flyway.configure()
             .dataSource(dataSource)
             .locations("classpath:/db/migration")
+            .validateMigrationNaming(true)
             .load()
 
         logger.info("Flyway migration count: ${flyway.info().all().size}")
