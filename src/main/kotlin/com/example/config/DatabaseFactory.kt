@@ -24,21 +24,19 @@ object DatabaseFactory {
         }
 
         val dataSource = HikariDataSource(config)
-        
+
         // Run Flyway Migrations
         val flyway = Flyway.configure()
             .dataSource(dataSource)
-            .locations("classpath:db/migration")
+            .locations("classpath:/db/migration")
             .load()
 
-        logger.info("Flyway migrations found: ${flyway.info().all().size}")
+        logger.info("Flyway migration count: ${flyway.info().all().size}")
 
         flyway.migrate()
 
-        logger.info("Flyway migrations completed")
-        
         Database.connect(dataSource)
-        
+
         logger.info("Database initialized successfully with connection pooling and migrations.")
     }
 
