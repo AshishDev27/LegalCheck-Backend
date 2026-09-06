@@ -30,8 +30,12 @@ object DatabaseFactory {
             .dataSource(dataSource)
             .locations("classpath:db/migration")
             .load()
-        flyway.repair()
+
+        logger.info("Flyway migrations found: ${flyway.info().all().size}")
+
         flyway.migrate()
+
+        logger.info("Flyway migrations completed")
         
         Database.connect(dataSource)
         
