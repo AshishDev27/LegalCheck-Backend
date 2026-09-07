@@ -28,7 +28,7 @@ object DatabaseFactory {
         // Run Flyway Migrations
         val flyway = Flyway.configure()
             .dataSource(dataSource)
-            .locations("classpath:/db/migration")
+            .locations("classpath:db/migration")
             .validateMigrationNaming(true)
             .load()
 
