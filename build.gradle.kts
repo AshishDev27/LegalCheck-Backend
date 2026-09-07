@@ -1,3 +1,4 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar.Companion.shadowJar
 
 plugins {
     alias(libs.plugins.kotlin.jvm)
@@ -54,4 +55,7 @@ dependencies {
     
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)
+}
+tasks.shadowJar {
+    mergeServiceFiles()
 }
