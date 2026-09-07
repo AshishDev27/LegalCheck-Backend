@@ -54,6 +54,11 @@ dependencies {
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)
 }
+tasks.named<Jar>("jar") {
+    enabled = false
+}
+
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+    archiveClassifier.set("")
     mergeServiceFiles()
 }
