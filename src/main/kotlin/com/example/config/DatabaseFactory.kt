@@ -26,9 +26,9 @@ object DatabaseFactory {
         val dataSource = HikariDataSource(config)
 
         // Run Flyway Migrations
-        val flyway = Flyway.configure()
+        val flyway = Flyway.configure(DatabaseFactory::class.java.classLoader)
             .dataSource(dataSource)
-            .locations("classpath:db/migration")
+            .locations("db/migration")
             .load()
 
         logger.info("Flyway migration count: ${flyway.info().all().size}")
