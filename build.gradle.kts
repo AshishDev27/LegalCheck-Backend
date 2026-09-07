@@ -60,6 +60,13 @@ tasks.named<Jar>("jar") {
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     archiveClassifier.set("")
+    // Shadow defaults duplicatesStrategy to EXCLUDE, which drops the second copy of a
+    // META-INF/services file before mergeServiceFiles() gets to merge it. flyway-core and
+    // flyway-mysql both ship org.flywaydb.core.extensibility.Plugin, so flyway-core's copy
+    // was lost and Flyway booted with no ResourceTypeProvider registered. Without one it
+    // recognises no migration prefix at all, and every file under db/migration was rejected
+    // as "Unrecognised migration name format" - the schema was never created.
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
     mergeServiceFiles()
 }
 
