@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.ServerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-07T09:48:37.255Z" hostname="DESKTOP-5E5298A" time="1.51">
+<testsuite name="com.example.ServerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-09-07T09:55:12.081Z" hostname="DESKTOP-5E5298A" time="1.404">
   <properties/>
-  <testcase name="health endpoint reports the service is up" classname="com.example.ServerTest" time="1.405"/>
-  <testcase name="inspection routes require authentication" classname="com.example.ServerTest" time="0.101"/>
-  <system-out><![CDATA[2026-09-07 15:18:37.870 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
-2026-09-07 15:18:37.935 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-09-07 15:18:38.078 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5af0c9d7
-2026-09-07 15:18:38.080 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-09-07 15:18:38.363 [DefaultDispatcher-worker-2 @coroutine#4] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/legalcheck?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true (MySQL 8.0)
-2026-09-07 15:18:38.425 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.example.config.DatabaseFactory - Flyway migration count: 2
-2026-09-07 15:18:38.446 [DefaultDispatcher-worker-2 @coroutine#4] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.006s)
-2026-09-07 15:18:38.456 [DefaultDispatcher-worker-2 @coroutine#4] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `legalcheck`: 2
-2026-09-07 15:18:38.459 [DefaultDispatcher-worker-2 @coroutine#4] INFO  o.f.core.internal.command.DbMigrate - Schema `legalcheck` is up to date. No migration necessary.
-2026-09-07 15:18:38.473 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.example.config.DatabaseFactory - Database initialized successfully with connection pooling and migrations.
-2026-09-07 15:18:38.549 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.694 seconds.
-2026-09-07 15:18:38.551 [DefaultDispatcher-worker-3 @coroutine#5] INFO  io.ktor.test - Responding at http://localhost:80
-2026-09-07 15:18:38.551 [DefaultDispatcher-worker-3 @coroutine#5] INFO  io.ktor.test - Responding at https://localhost:443
-2026-09-07 15:18:38.669 [DefaultDispatcher-worker-4 @call-context#15] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
-2026-09-07 15:18:38.670 [DefaultDispatcher-worker-4 @coroutine#16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2026-09-07 15:18:38.676 [DefaultDispatcher-worker-4 @coroutine#16] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63cd45fb
-2026-09-07 15:18:38.676 [DefaultDispatcher-worker-4 @coroutine#16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2026-09-07 15:18:38.698 [DefaultDispatcher-worker-4 @coroutine#16] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/legalcheck?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true (MySQL 8.0)
-2026-09-07 15:18:38.724 [DefaultDispatcher-worker-4 @coroutine#16] INFO  com.example.config.DatabaseFactory - Flyway migration count: 2
-2026-09-07 15:18:38.741 [DefaultDispatcher-worker-4 @coroutine#16] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.006s)
-2026-09-07 15:18:38.747 [DefaultDispatcher-worker-4 @coroutine#16] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `legalcheck`: 2
-2026-09-07 15:18:38.748 [DefaultDispatcher-worker-4 @coroutine#16] INFO  o.f.core.internal.command.DbMigrate - Schema `legalcheck` is up to date. No migration necessary.
-2026-09-07 15:18:38.749 [DefaultDispatcher-worker-4 @coroutine#16] INFO  com.example.config.DatabaseFactory - Database initialized successfully with connection pooling and migrations.
-2026-09-07 15:18:38.751 [DefaultDispatcher-worker-4 @call-context#15] INFO  io.ktor.test - Application started in 0.082 seconds.
-2026-09-07 15:18:38.752 [DefaultDispatcher-worker-3 @coroutine#17] INFO  io.ktor.test - Responding at http://localhost:80
-2026-09-07 15:18:38.752 [DefaultDispatcher-worker-3 @coroutine#17] INFO  io.ktor.test - Responding at https://localhost:443
+  <testcase name="health endpoint reports the service is up" classname="com.example.ServerTest" time="1.31"/>
+  <testcase name="inspection routes require authentication" classname="com.example.ServerTest" time="0.09"/>
+  <system-out><![CDATA[2026-09-07 15:25:12.655 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2026-09-07 15:25:12.703 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-07 15:25:12.850 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4305869e
+2026-09-07 15:25:12.852 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-07 15:25:13.104 [DefaultDispatcher-worker-2 @coroutine#4] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/legalcheck (MySQL 8.0)
+2026-09-07 15:25:13.165 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.example.config.DatabaseFactory - Flyway migration count: 2
+2026-09-07 15:25:13.183 [DefaultDispatcher-worker-2 @coroutine#4] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.006s)
+2026-09-07 15:25:13.192 [DefaultDispatcher-worker-2 @coroutine#4] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `legalcheck`: 2
+2026-09-07 15:25:13.195 [DefaultDispatcher-worker-2 @coroutine#4] INFO  o.f.core.internal.command.DbMigrate - Schema `legalcheck` is up to date. No migration necessary.
+2026-09-07 15:25:13.212 [DefaultDispatcher-worker-2 @coroutine#4] INFO  com.example.config.DatabaseFactory - Database initialized successfully with connection pooling and migrations.
+2026-09-07 15:25:13.285 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.643 seconds.
+2026-09-07 15:25:13.287 [DefaultDispatcher-worker-3 @coroutine#5] INFO  io.ktor.test - Responding at http://localhost:80
+2026-09-07 15:25:13.287 [DefaultDispatcher-worker-3 @coroutine#5] INFO  io.ktor.test - Responding at https://localhost:443
+2026-09-07 15:25:13.399 [DefaultDispatcher-worker-2 @call-context#15] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2026-09-07 15:25:13.400 [DefaultDispatcher-worker-2 @coroutine#16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-09-07 15:25:13.405 [DefaultDispatcher-worker-2 @coroutine#16] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@764941ca
+2026-09-07 15:25:13.405 [DefaultDispatcher-worker-2 @coroutine#16] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-09-07 15:25:13.421 [DefaultDispatcher-worker-2 @coroutine#16] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/legalcheck (MySQL 8.0)
+2026-09-07 15:25:13.452 [DefaultDispatcher-worker-2 @coroutine#16] INFO  com.example.config.DatabaseFactory - Flyway migration count: 2
+2026-09-07 15:25:13.464 [DefaultDispatcher-worker-2 @coroutine#16] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.005s)
+2026-09-07 15:25:13.469 [DefaultDispatcher-worker-2 @coroutine#16] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `legalcheck`: 2
+2026-09-07 15:25:13.470 [DefaultDispatcher-worker-2 @coroutine#16] INFO  o.f.core.internal.command.DbMigrate - Schema `legalcheck` is up to date. No migration necessary.
+2026-09-07 15:25:13.471 [DefaultDispatcher-worker-2 @coroutine#16] INFO  com.example.config.DatabaseFactory - Database initialized successfully with connection pooling and migrations.
+2026-09-07 15:25:13.473 [DefaultDispatcher-worker-2 @call-context#15] INFO  io.ktor.test - Application started in 0.074 seconds.
+2026-09-07 15:25:13.473 [DefaultDispatcher-worker-1 @coroutine#17] INFO  io.ktor.test - Responding at http://localhost:80
+2026-09-07 15:25:13.473 [DefaultDispatcher-worker-1 @coroutine#17] INFO  io.ktor.test - Responding at https://localhost:443
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

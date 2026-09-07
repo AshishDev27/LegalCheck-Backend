@@ -5,7 +5,7 @@ exposed = "0.56.0"
 mysql = "9.0.0"
 hikaricp = "5.1.0"
 bcrypt = "0.10.2"
-flyway = "11.15.0"
+flyway = "10.20.0"
 dotenv = "6.5.1"
 
 [libraries]
